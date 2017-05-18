@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<link rel="stylesheet" href="/styles/app.css">
+        #import("head")
+        #embed("bootstrap")
+    </head>
+    <body>
+        #raw() {
+            <nav class="navbar navbar-fixed-top navbar-inverse">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="/">SwiftMN</a>
+                    </div>
+                    <div id="navbar" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav">
+                            <li id="nav-home-item"><a href="/">Home</a></li>
+                            <li id="nav-events-item"><a href="/events">Events</a></li>
+                            <li id="nav-about-item"><a href="/about">About</a></li>
+                        </ul>
+                    </div><!-- /.nav-collapse -->
+                </div><!-- /.container -->
+            </nav>
+
+            <script>
+                jQuery(function($){
+                    var pathParts = window.location.pathname.split('/');
+                    if (pathParts.length > 1) {
+                        if (pathParts.length > 1 && pathParts[1] == "") {
+                            $("#nav-home-item").addClass("active");
+                        } else if (pathParts.length > 1 && pathParts[1] == "about") {
+                            $("#nav-about-item").addClass("active");
+                        } else if (pathParts.length > 1 && pathParts[1] == "events") {
+                            $("#nav-events-item").addClass("active");
+                        }
+                    }
+                });
+            </script>
+        }
+
+        #import("body")
+
+    </body>
+</html>

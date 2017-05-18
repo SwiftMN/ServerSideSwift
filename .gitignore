@@ -1,0 +1,11 @@
+Packages
+.build
+xcuserdata
+*.xcodeproj
+Config/secrets
+
+# Intellij
+.idea
+
+# Visual Studio Code
+.vscode

@@ -1,0 +1,22 @@
+#extend("base")
+
+#export("head") {
+	<title>SwiftMN Events</title>
+    #embed("bootstrap")
+}
+
+#export("body") {
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6 col-lg-2">
+                <a style="width" href="#(event.link)" target="_blank"><img src="/images/meetup-wordmark-red.png"></img></a>
+            </div>
+            <div class="col-xs-6 col-lg-12">
+                <h1>#(event.name)</h1>
+            </div>
+            <div class="col-xs-6 col-lg-12">
+                #raw(event.description)
+            </div>
+        </div>
+    </div>
+}

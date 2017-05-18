@@ -1,0 +1,24 @@
+# Systemd service file for a Vapor app
+# put in /lib/systemd/system
+# use: systemctl clean stop/start/reload/restart/status app.service
+#
+# put config files in /lib/systemd/system/app.service.d/myenv.conf
+
+[Unit]
+Description=SwiftMN Vapor App
+After=syslog.target
+
+[Service]
+User=root
+WorkingDirectory=/home/ubuntu/SwiftMN
+ExecStart=/home/ubuntu/SwiftMN/.build/release/App --env=production
+Restart=on-abort
+
+#Type=idle
+#Environment=statedir=/var/cache/foo
+#ExecStartPre=/usr/bin/mkdir -p ${statedir}
+#ExecStart=/usr/local/bin/vapor run serve --env=production
+
+[Install]
+WantedBy=multi-user.target
+
