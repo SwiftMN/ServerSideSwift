@@ -9,10 +9,10 @@
     #raw() {
       <div class="container">
         <div class=row>
-          <div class="col-xs-6 col-lg-5">
+          <div class="col-xs-12 col-lg-5">
             <img src="images/SwiftMN-Logo.png">
           </div>
-          <div class="col-xs-6 col-lg-5">
+          <div class="col-xs-12 col-lg-5">
             <p><h1>SwiftMN</h1>
             is a user group that discusses the Swift programming language. Our discussions are led by community members like you so if you have an idea for a talk let us know by</p>
             <ul>
@@ -23,20 +23,20 @@
             <h1>Members</h1>
             <p>We have a lot of awesome people in SwiftMN. Check them out at <a href="https://www.meetup.com/SwiftMN/members/" target="_blank">meetup.com</a></p>
           </div>
-          <div class="col-xs-6 col-lg-12">
+          <div class="col-xs-12 col-lg-12">
             <h1>Organizers</h1>
           </div>
-          <div class="col-xs-6 col-lg-4">
+          <div class="col-xs-12 col-lg-4">
             <h3>Adam Ahrens</h3>
             <img class="profile" src="images/ahrens.JPG"></img>
             <p>Building things that your grandparents wouldn't understand.</p>
           </div>
-          <div class="col-xs-6 col-lg-4">
+          <div class="col-xs-12 col-lg-4">
             <h3>Adam Mika</h3>
             <img class="profile" src="images/mika.jpg"></img>
             <p>The Magician</p>
           </div>
-          <div class="col-xs-6 col-lg-4">
+          <div class="col-xs-12 col-lg-4">
             <h3>Steve Vlaminck aka MikeDave</h3>
             <img class="profile" src="images/mikedave.png"></img>
             <p>Steve registerd swift.mn while the announcement of the Swift language was still happening. He later realized that he inadvertantly started a user group. #noregrets</p>
